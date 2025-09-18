@@ -24,7 +24,7 @@ interface Line {
 	text?: string;
 }
 
-const lineMatchRE = /^(\d+)\s+(.*?)(\s+\(([A-Za-z0-9]{3})\)\s+(\d+))?$/;
+const lineMatchRE = /^(\d+)\s+(.*?)(\s+\(([A-Za-z0-9]{3})\)\s+0*(\d+))?$/;
 const blankLineRE = /^\s+$/;
 const headingMatchRE = new RegExp("^[^[0-9|" + COMMENT_DELIMITER + "]");
 
